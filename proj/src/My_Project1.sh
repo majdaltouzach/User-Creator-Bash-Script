@@ -31,7 +31,11 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 #create5  users, generate and assign password from words.txt 
 ##
 #<your command is here>
+for i in {1..5}
+do
+	echo welcome $i times
 
+done
 
 
 ##
