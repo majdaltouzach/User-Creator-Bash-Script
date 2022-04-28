@@ -11,15 +11,15 @@ read -p "Please run this script using sudo, else will not assign password to use
 
 ##
 #Create sandbox directory in home
-mkdir sandbox 
+mkdir sandbox2
 
-cd sandbox
+cd sandbox2
 ##
 
 ##
 #Download password file online
 ##
-wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/twitter-banned.txt -O words.txt
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/twitter-banned.txt -O passwordlist.txt
 
 
 ##From passwordlist.txt, shuffle and randomly select 100 entries then save it to words.txt in the sandbox directory
