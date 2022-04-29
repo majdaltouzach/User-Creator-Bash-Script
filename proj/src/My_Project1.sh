@@ -31,14 +31,7 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 #create5  users, generate and assign password from words.txt 
 ##
 #<your command is here>
-for i in {1..5}
-do
-	randompw=$(shuf words.txt | tail -n 1)
-	useradd -m user$i
-	echo user$i:$randompw | chpasswd
-	echo "UserID:" user$i "has been created with the following password:" $randompw
 
-done
 
 
 
