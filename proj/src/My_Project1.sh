@@ -30,7 +30,15 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 ##
 #create5  users, generate and assign password from words.txt 
 ##
-#<your command is here>
+for i in {1..5}
+do
+	randompw=$(shuf words.txt | tail -n 1)
+	useradd -m user1
+	echo user1:$randompw | chpasswd
+	echo "UserID:" user1 "has been created with the following password:" 	    $randompw
+
+done
+
 
 
 
@@ -38,4 +46,4 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 ##
 #copy shadow file from /etc/shadow to sandbox directory
 ##
-cp -r /etc/shadow sandbox2
+cp -ar /etc/shadow sandbox2
