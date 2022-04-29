@@ -33,9 +33,9 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 #<your command is here>
 for i in {1..5}
 do
-	echo welcome $i times
-
+	echo "welcome $i times"
 done
+
 
 
 ##
