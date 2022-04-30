@@ -2,7 +2,7 @@
 
 ###
 #perform PROJECT1 for CS125: Create user account and assign password from words.txt.
-#Coded by: <your name>
+#Coded by: Toufic Majdalani
 ###
 
 read -p "Please run this script using sudo, else will not assign password to users and cannot copy shadow file to Sandbox. Press Enter key to proceed."
